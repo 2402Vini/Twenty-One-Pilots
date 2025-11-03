@@ -1,0 +1,233 @@
+/* ===== Estilo geral ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background-color: #d54b3f;
+  scroll-behavior: smooth;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #040404;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+header .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Garante que quebra corretamente em telas pequenas */
+  gap: 20px; /* <-- Adiciona espaçamento automático entre h1, logo e nav */
+}
+
+header h1 {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  flex: 1; /* Ocupa espaço proporcional à esquerda */
+  text-align: left;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  width: 80px;
+  height: auto;
+  flex: 0;
+  margin: 0 40px; /* Aumenta o espaço dos dois lados */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* ===== NAV ===== */
+nav {
+  flex: 1; /* Ocupa espaço proporcional à direita */
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b30000;
+}
+
+/* ===== SEÇÃO SOBRE ===== */
+.sobre {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2em;
+  color: #b30000;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* ===== CURIOSIDADES ===== */
+.curiosidades {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #d54b3f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.curiosidades h2 {
+  font-size: 2em;
+  color: #b30000;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.curiosidades ul {
+  list-style-type: "🎧 ";
+  padding-left: 20px;
+  text-align: left;
+}
+
+.curiosidades li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* ===== DISCOGRAFIA ===== */
+.discografia {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.discografia h2 {
+  font-size: 2em;
+  color: #b30000;
+  margin-bottom: 40px;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.album {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.album:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.album h3 {
+  margin-top: 12px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #040404;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 60px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95em;
+}
+
+footer .social {
+  margin-top: 10px;
+}
+
+footer a {
+  color: #b30000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+   header h1, nav {
+    text-align: center;
+  }
+
+  .logo {
+    margin: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre, .discografia, .curiosidades {
+    padding: 10px;
+  }
+
+  .sobre h2, .discografia h2, .curiosidades h2 {
+    font-size: 1.6em;
+  }
+
+  .album h3 {
+    font-size: 0.9em;
+  }
+}

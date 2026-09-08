@@ -3,10 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site de fã dedicado à banda Twenty One Pilots com história, curiosidades e discografia completa.">
   <title>Twenty One Pilots - Site de Fã</title>
   
   <link rel="icon" type="image/avif" href="Logo_TOP.avif">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS Minificado e Inline com Paleta Vermelho/Preto Otimizada -->
+  <style>
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#fff;margin:0;padding:0;background-color:#990000;scroll-behavior:smooth}
+    header{background-color:#000;color:#fff;padding:15px 0;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+    header .container{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;gap:20px}
+    header h1{font-size:1.6em;letter-spacing:1px;flex:1;text-align:left;margin:0;color:#fff}
+    .logo{width:80px;height:auto;flex:0;margin:0 40px;transition:transform .3s ease}
+    .logo:hover{transform:scale(1.1)}
+    nav{flex:1;text-align:right}
+    nav ul{list-style:none;display:flex;gap:20px;margin:0;padding:0;justify-content:flex-end}
+    nav a{text-decoration:none;color:#fff;font-weight:700;transition:color .3s ease}
+    nav a:hover{color:#e60000}
+    main{display:block}
+    .sobre,.curiosidades,.discografia{max-width:900px;margin:40px auto;padding:20px;color:#fff}
+    .sobre h2,.curiosidades h2,.discografia h2{font-size:2em;color:#fff;text-align:center;margin-bottom:20px;text-transform:uppercase;letter-spacing:2px}
+    .sobre p,.curiosidades li{line-height:1.6;margin-bottom:15px;color:#fff}
+    .curiosidades{background-color:#000;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.4);border:1px solid #333}
+    .curiosidades ul{list-style-type:"🎧 ";padding-left:20px;text-align:left}
+    .discografia{max-width:1000px}
+    .album-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;justify-items:center}
+    .album{text-align:center;transition:transform .3s ease}
+    .album img{width:100%;max-width:200px;height:auto;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.6)}
+    .album:hover img{transform:scale(1.08)}
+    .album h3{margin-top:12px;font-size:1em;color:#fff}
+    footer{background-color:#000;color:#fff;text-align:center;padding:30px 10px;margin-top:60px;border-top:2px solid #e60000}
+    footer p{margin:0;font-size:.95em}
+    footer .social{margin-top:10px}
+    footer a{color:#e60000;text-decoration:none;font-weight:700}
+    footer a:hover{color:#fff}
+    @media (max-width:600px){
+      header .container{flex-direction:column;align-items:center;text-align:center;gap:10px}
+      header h1,nav{text-align:center}
+      nav ul{justify-content:center}
+      .logo{margin:10px 0}
+    }
+  </style>
 </head>
 <body>
 
@@ -14,10 +51,7 @@
   <header>
     <div class="container">
       <h1>Twenty One Pilots</h1>
-      
-      <!-- fetchpriority="high" prioriza o carregamento da imagem principal acima da dobra -->
-      <img src="Logo_TOP.avif" width="100" height="100" alt="Logo Twenty One Pilots" class="logo" fetchpriority="high">
-      
+      <img src="Logo_TOP.avif" width="80" height="80" alt="Logo Twenty One Pilots" class="logo" fetchpriority="high">
       <nav>
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -28,74 +62,67 @@
     </div>
   </header>
 
-  <!-- SEÇÃO SOBRE -->
-  <section id="sobre" class="sobre">
-    <h2>🎵 Sobre</h2>
-    <p><strong>Twenty One Pilots</strong> é uma banda norte-americana formada em <strong>2009</strong>, em <strong>Columbus, Ohio</strong>, pelos músicos <strong>Tyler Joseph</strong> e <strong>Josh Dun</strong>. O grupo é conhecido por misturar diversos estilos musicais, como <em>pop</em>, <em>rock</em>, <em>hip hop</em>, <em>eletrônica</em> e <em>indie</em>, criando um som autêntico e difícil de rotular.</p>
+  <!-- PONTO DE REFERÊNCIA PRINCIPAL (MAIN) -->
+  <main>
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="sobre">
+      <h2>🎵 Sobre</h2>
+      <p><strong>Twenty One Pilots</strong> é uma banda norte-americana formada em <strong>2009</strong>, em <strong>Columbus, Ohio</strong>, pelos músicos <strong>Tyler Joseph</strong> e <strong>Josh Dun</strong>. O grupo é conhecido por misturar diversos estilos musicais, como <em>pop</em>, <em>rock</em>, <em>hip hop</em>, <em>eletrônica</em> e <em>indie</em>, criando um som autêntico e difícil de rotular.</p>
+      <p>A banda ganhou destaque mundial com o álbum <strong>“Blurryface” (2015)</strong>, que trouxe sucessos como <em>“Stressed Out”</em>, <em>“Ride”</em> e <em>“Tear in My Heart”</em>. A canção <em>“Heathens”</em>, lançada para a trilha sonora do filme <em>Esquadrão Suicida (2016)</em>, também se tornou um grande hit.</p>
+      <p>As letras do Twenty One Pilots costumam abordar temas profundos, como <strong>saúde mental, insegurança, identidade e esperança</strong>, conectando-se intensamente com seus fãs — conhecidos como o <strong>Clique</strong>. A estética visual dos álbuns e shows da banda é marcante, combinando simbolismos, cores e narrativas que evoluem a cada era.</p>
+    </section>
 
-    <p>A banda ganhou destaque mundial com o álbum <strong>“Blurryface” (2015)</strong>, que trouxe sucessos como <em>“Stressed Out”</em>, <em>“Ride”</em> e <em>“Tear in My Heart”</em>. A canção <em>“Heathens”</em>, lançada para a trilha sonora do filme <em>Esquadrão Suicida (2016)</em>, também se tornou um grande hit.</p>
+    <!-- SEÇÃO CURIOSIDADES -->
+    <section id="curiosidades" class="curiosidades">
+      <h2>🧐 Curiosidades</h2>
+      <ul>
+        <li>O nome <strong>“Twenty One Pilots”</strong> foi inspirado na peça <em>All My Sons</em>, de Arthur Miller, onde 21 pilotos morrem por causa de uma decisão moral errada — o nome representa a luta entre o certo e o errado.</li>
+        <li>O símbolo “<strong>|-/</strong>” é uma marca da banda e significa “ficar firme mesmo quando as coisas estão desmoronando”.</li>
+        <li><strong>Tyler Joseph</strong> escreve a maioria das músicas e costuma incluir mensagens ocultas e temas de superação.</li>
+        <li>O álbum <em>Trench</em> (2018) criou um universo narrativo próprio, com personagens e lugares simbólicos, como a cidade fictícia de Dema.</li>
+        <li>Os fãs da banda são chamados de <strong>“The Clique”</strong> e são conhecidos pelo envolvimento emocional com as mensagens da banda.</li>
+      </ul>
+    </section>
 
-    <p>As letras do Twenty One Pilots costumam abordar temas profundos, como <strong>saúde mental, insegurança, identidade e esperança</strong>, conectando-se intensamente com seus fãs — conhecidos como o <strong>Clique</strong>. A estética visual dos álbuns e shows da banda é marcante, combinando simbolismos, cores e narrativas que evoluem a cada era.</p>
-  </section>
-
-  <!-- SEÇÃO CURIOSIDADES -->
-  <section id="curiosidades" class="curiosidades">
-    <h2>🧐 Curiosidades</h2>
-    <ul>
-      <li>O nome <strong>“Twenty One Pilots”</strong> foi inspirado na peça <em>All My Sons</em>, de Arthur Miller, onde 21 pilotos morrem por causa de uma decisão moral errada — o nome representa a luta entre o certo e o errado.</li>
-      <li>O símbolo “<strong>|-/</strong>” é uma marca da banda e significa “ficar firme mesmo quando as coisas estão desmoronando”.</li>
-      <li><strong>Tyler Joseph</strong> escreve a maioria das músicas e costuma incluir mensagens ocultas e temas de superação.</li>
-      <li>O álbum <em>Trench</em> (2018) criou um universo narrativo próprio, com personagens e lugares simbólicos, como a cidade fictícia de Dema.</li>
-      <li>Os fãs da banda são chamados de <strong>“The Clique”</strong> e são conhecidos pelo envolvimento emocional com as mensagens da banda.</li>
-    </ul>
-  </section>
-
-  <!-- SEÇÃO DISCOGRAFIA -->
-  <section id="discografia" class="discografia">
-    <h2>💿 Discografia</h2>
-
-    <div class="album-grid">
-      <div class="album">
-        <img src="Twenty_One_Pilots_álbum.avif" alt="Twenty One Pilots (2009)" width="200" height="200" loading="lazy">
-        <h3>Twenty One Pilots (2009)</h3>
+    <!-- SEÇÃO DISCOGRAFIA -->
+    <section id="discografia" class="discografia">
+      <h2>💿 Discografia</h2>
+      <div class="album-grid">
+        <div class="album">
+          <img src="Twenty_One_Pilots_álbum.avif" alt="Twenty One Pilots (2009)" width="200" height="200" loading="lazy">
+          <h3>Twenty One Pilots (2009)</h3>
+        </div>
+        <div class="album">
+          <img src="Twenty_One_Pilots_-_Regional_at_Best.avif" alt="Regional at Best (2011)" width="200" height="200" loading="lazy">
+          <h3>Regional at Best (2011)</h3>
+        </div>
+        <div class="album">
+          <img src="Capa_de_Vessel.avif" alt="Vessel (2013)" width="200" height="200" loading="lazy">
+          <h3>Vessel (2013)</h3>
+        </div>
+        <div class="album">
+          <img src="Blurryface_by_Twenty_One_Pilots.avif" alt="Blurryface (2015)" width="200" height="200" loading="lazy">
+          <h3>Blurryface (2015)</h3>
+        </div>
+        <div class="album">
+          <img src="Capa_de_Trench.avif" alt="Trench (2018)" width="200" height="200" loading="lazy">
+          <h3>Trench (2018)</h3>
+        </div>
+        <div class="album">
+          <img src="Scaled_and_Icy_-_Twenty_One_Pilots.avif" alt="Scaled and Icy (2021)" width="200" height="200" loading="lazy">
+          <h3>Scaled and Icy (2021)</h3>
+        </div>
+        <div class="album">
+          <img src="Twenty_One_Pilots_-_Clancy.avif" alt="Clancy (2024)" width="200" height="200" loading="lazy">
+          <h3>Clancy (2024)</h3>
+        </div>
+        <div class="album">
+          <img src="Breach.avif" alt="Breach (2025)" width="200" height="200" loading="lazy">
+          <h3>Breach (2025)</h3>
+        </div>
       </div>
-
-      <div class="album">
-        <img src="Twenty_One_Pilots_-_Regional_at_Best.avif" alt="Regional at Best (2011)" width="200" height="200" loading="lazy">
-        <h3>Regional at Best (2011)</h3>
-      </div>
-
-      <div class="album">
-        <img src="Capa_de_Vessel.avif" alt="Vessel (2013)" width="200" height="200" loading="lazy">
-        <h3>Vessel (2013)</h3>
-      </div>
-
-      <div class="album">
-        <img src="Blurryface_by_Twenty_One_Pilots.avif" alt="Blurryface (2015)" width="200" height="200" loading="lazy">
-        <h3>Blurryface (2015)</h3>
-      </div>
-
-      <div class="album">
-        <img src="Capa_de_Trench.avif" alt="Trench (2018)" width="200" height="200" loading="lazy">
-        <h3>Trench (2018)</h3>
-      </div>
-
-      <div class="album">
-        <img src="Scaled_and_Icy_-_Twenty_One_Pilots.avif" alt="Scaled and Icy (2021)" width="200" height="200" loading="lazy">
-        <h3>Scaled and Icy (2021)</h3>
-      </div>
-
-      <div class="album">
-        <img src="Twenty_One_Pilots_-_Clancy.avif" alt="Clancy (2024)" width="200" height="200" loading="lazy">
-        <h3>Clancy (2024)</h3>
-      </div>
-
-      <div class="album">
-        <img src="Breach.avif" alt="Breach (2025)" width="200" height="200" loading="lazy">
-        <h3>Breach (2025)</h3>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- RODAPÉ -->
   <footer>

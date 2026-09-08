@@ -5,20 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Twenty One Pilots - Site de Fã</title>
   
-  <!-- Ícone da Aba do Navegador (Favicon) -->
-  <link rel="icon" type="image/x-icon" href="Logo_TOP.avif">
-  
+  <link rel="icon" type="image/avif" href="Logo_TOP.avif">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- HEADER -->
   <header>
     <div class="container">
       <h1>Twenty One Pilots</h1>
       
-      <!-- Logo centralizada (Carregamento prioritário) -->
-      <img src="Logo_TOP.avif" width="100" height="100" alt="Logo Twenty One Pilots" class="logo">
+      <!-- fetchpriority="high" prioriza o carregamento da imagem principal acima da dobra -->
+      <img src="Logo_TOP.avif" width="100" height="100" alt="Logo Twenty One Pilots" class="logo" fetchpriority="high">
       
       <nav>
         <ul>
@@ -30,7 +28,7 @@
     </div>
   </header>
 
-  <!-- ===== SEÇÃO SOBRE ===== -->
+  <!-- SEÇÃO SOBRE -->
   <section id="sobre" class="sobre">
     <h2>🎵 Sobre</h2>
     <p><strong>Twenty One Pilots</strong> é uma banda norte-americana formada em <strong>2009</strong>, em <strong>Columbus, Ohio</strong>, pelos músicos <strong>Tyler Joseph</strong> e <strong>Josh Dun</strong>. O grupo é conhecido por misturar diversos estilos musicais, como <em>pop</em>, <em>rock</em>, <em>hip hop</em>, <em>eletrônica</em> e <em>indie</em>, criando um som autêntico e difícil de rotular.</p>
@@ -40,7 +38,7 @@
     <p>As letras do Twenty One Pilots costumam abordar temas profundos, como <strong>saúde mental, insegurança, identidade e esperança</strong>, conectando-se intensamente com seus fãs — conhecidos como o <strong>Clique</strong>. A estética visual dos álbuns e shows da banda é marcante, combinando simbolismos, cores e narrativas que evoluem a cada era.</p>
   </section>
 
-  <!-- ===== SEÇÃO CURIOSIDADES ===== -->
+  <!-- SEÇÃO CURIOSIDADES -->
   <section id="curiosidades" class="curiosidades">
     <h2>🧐 Curiosidades</h2>
     <ul>
@@ -52,55 +50,54 @@
     </ul>
   </section>
 
-  <!-- ===== SEÇÃO DISCOGRAFIA ===== -->
+  <!-- SEÇÃO DISCOGRAFIA -->
   <section id="discografia" class="discografia">
     <h2>💿 Discografia</h2>
 
     <div class="album-grid">
-      <!-- Adicionado loading="lazy" em todas as capas para carregar apenas quando visíveis -->
       <div class="album">
-        <img src="Twenty_One_Pilots_álbum.avif" alt="Twenty One Pilots (2009)" loading="lazy">
+        <img src="Twenty_One_Pilots_álbum.avif" alt="Twenty One Pilots (2009)" width="200" height="200" loading="lazy">
         <h3>Twenty One Pilots (2009)</h3>
       </div>
 
       <div class="album">
-        <img src="Twenty_One_Pilots_-_Regional_at_Best.avif" alt="Regional at Best (2011)" loading="lazy">
+        <img src="Twenty_One_Pilots_-_Regional_at_Best.avif" alt="Regional at Best (2011)" width="200" height="200" loading="lazy">
         <h3>Regional at Best (2011)</h3>
       </div>
 
       <div class="album">
-        <img src="Capa_de_Vessel.avif" alt="Vessel (2013)" loading="lazy">
+        <img src="Capa_de_Vessel.avif" alt="Vessel (2013)" width="200" height="200" loading="lazy">
         <h3>Vessel (2013)</h3>
       </div>
 
       <div class="album">
-        <img src="Blurryface_by_Twenty_One_Pilots.avif" alt="Blurryface (2015)" loading="lazy">
+        <img src="Blurryface_by_Twenty_One_Pilots.avif" alt="Blurryface (2015)" width="200" height="200" loading="lazy">
         <h3>Blurryface (2015)</h3>
       </div>
 
       <div class="album">
-        <img src="Capa_de_Trench.avif" alt="Trench (2018)" loading="lazy">
+        <img src="Capa_de_Trench.avif" alt="Trench (2018)" width="200" height="200" loading="lazy">
         <h3>Trench (2018)</h3>
       </div>
 
       <div class="album">
-        <img src="Scaled_and_Icy_-_Twenty_One_Pilots.avif" alt="Scaled and Icy (2021)" loading="lazy">
+        <img src="Scaled_and_Icy_-_Twenty_One_Pilots.avif" alt="Scaled and Icy (2021)" width="200" height="200" loading="lazy">
         <h3>Scaled and Icy (2021)</h3>
       </div>
 
       <div class="album">
-        <img src="Twenty_One_Pilots_-_Clancy.avif" alt="Clancy (2024)" loading="lazy">
+        <img src="Twenty_One_Pilots_-_Clancy.avif" alt="Clancy (2024)" width="200" height="200" loading="lazy">
         <h3>Clancy (2024)</h3>
       </div>
 
       <div class="album">
-        <img src="Breach.avif" alt="Breach (2025)" loading="lazy">
+        <img src="Breach.avif" alt="Breach (2025)" width="200" height="200" loading="lazy">
         <h3>Breach (2025)</h3>
       </div>
     </div>
   </section>
 
-  <!-- ===== RODAPÉ ===== -->
+  <!-- RODAPÉ -->
   <footer>
     <p>Site de fã criado por <strong>Vinicius Aparecido Rigo</strong> 💻 | 2026</p>
     <div class="social">
